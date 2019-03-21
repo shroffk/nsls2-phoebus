@@ -32,4 +32,4 @@ export JDK_JAVA_OPTIONS
 
 echo $JDK_JAVA_OPTIONS
 
-java -jar $JAR -settings $TOP/config/settings.ini $OPT "$@" &
+java -jar $JAR -settings $TOP/config/settings.ini -logging $TOP/config/logging.properties $OPT "$@" &
