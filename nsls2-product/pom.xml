@@ -11,7 +11,7 @@
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
-      <artifactId>app-alarm-logging-ui</artifactId>
+      <artifactId>app-logbook-olog</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
