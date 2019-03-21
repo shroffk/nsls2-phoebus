@@ -3,7 +3,7 @@ target/
 release.properties
 .settings
 .classpath
-
+phoebus/
 
 ### Maven ###
 target/
