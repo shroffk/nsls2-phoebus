@@ -41,10 +41,10 @@ export PATH="$MVN_HOME/bin:$PATH"
 
 #build phoebus
 cd $TOP/lib/phoebus
-mvn clean install -DskipTests=true
+mvn clean install --settings=$TOP/settings.xml -DskipTests=true
 
 #build nsls2 product
 cd $TOP
-mvn clean install -DskipTests=true
+mvn clean install --settings=$TOP/settings.xml -DskipTests=true
 
 
