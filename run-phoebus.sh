@@ -17,11 +17,14 @@ else
   JAR="${TOP}/target/nsls2-product-${V}-SNAPSHOT.jar"
 fi
 
+# figure out the path to the configuration settings
+if [[ -z "${PHOEBUS_CONFIG}" ]]; then
+  PHOEBUS_CONFIG=${TOP}/config/settings.ini
+fi
+
 # To get one instance, use server mode
 ID=$(id -u)
-echo $ID
 OPT="-server 4$ID"
-echo $OPT
 
 JDK_JAVA_OPTIONS=" -DCA_DISABLE_REPEATER=true"
 JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS -Dnashorn.args=--no-deprecation-warning"
@@ -32,4 +35,4 @@ export JDK_JAVA_OPTIONS
 
 echo $JDK_JAVA_OPTIONS
 
-java -jar $JAR -settings $TOP/config/settings.ini -logging $TOP/config/logging.properties $OPT "$@" &
+java -jar $JAR -settings $PHOEBUS_CONFIG -logging $TOP/config/logging.properties $OPT "$@" &
