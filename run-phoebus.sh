@@ -7,14 +7,11 @@ export JAVA_HOME=$TOP/lib/jvm/jdk-11.0.2
 export PATH="$JAVA_HOME/bin:$PATH"
 
 echo $TOP
-V="0.0.1"
+V="4.6.0-SNAPSHOT"
 
-# Use ant or maven jar?
-if [ -f ${TOP}/target/nsls2-product-${V}.jar ]
-then
-  JAR="${TOP}/target/nsls2-product-${V}.jar"
-else
-  JAR="${TOP}/target/nsls2-product-${V}-SNAPSHOT.jar"
+# figure out the path to the product jar
+if [[ -z "${PHOEBUS_JAR}" ]]; then
+  PHOEBUS_JAR=${TOP}/products/nsls2-accl/target/nsls2-accl-product-${V}.jar
 fi
 
 # figure out the path to the configuration settings
@@ -35,4 +32,4 @@ export JDK_JAVA_OPTIONS
 
 echo $JDK_JAVA_OPTIONS
 
-java -jar $JAR -settings $PHOEBUS_CONFIG -logging $TOP/config/logging.properties $OPT "$@" &
+java -jar $PHOEBUS_JAR -settings $PHOEBUS_CONFIG -logging $TOP/config/logging.properties $OPT "$@" &
