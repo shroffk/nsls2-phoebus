@@ -14,7 +14,7 @@ fi
 if [ ! -d ${TOP}/lib/kibana-6.3.1 ]; then
     wget --no-check-certificate https://artifacts.elastic.co/downloads/kibana/kibana-6.3.1-linux-x86_64.tar.gz -O /tmp/kibana-6.3.1-linux-x86_64.tar.gz
     tar xzvf /tmp/kibana-6.3.1-linux-x86_64.tar.gz --directory ${TOP}/lib
-    mv kibana-6.3.1-linux-x86_64 kibana-6.3.1
+    mv ${TOP}/lib/kibana-6.3.1-linux-x86_64 ${TOP}/lib/kibana-6.3.1
     rm /tmp/kibana-6.3.1-linux-x86_64.tar.gz
 fi
 
