@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Phoebus launcher for Linux or Mac OS X
 TOP="$PWD"
