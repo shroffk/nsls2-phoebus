@@ -17,7 +17,7 @@ fi
 
 # download maven
 if [ ! -d ${TOP}/lib/apache-maven-3.6.0 ]; then
-    wget http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz -O /tmp/apache-maven-3.6.0-bin.tar.gz
+    wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz -O /tmp/apache-maven-3.6.0-bin.tar.gz
     tar xzvf /tmp/apache-maven-3.6.0-bin.tar.gz --directory ${TOP}/lib
     rm /tmp/apache-maven-3.6.0-bin.tar.gz
 fi
