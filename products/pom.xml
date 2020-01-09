@@ -6,9 +6,13 @@
   <name>NSLS2 phoebus products</name>
   <parent>
     <groupId>org.phoebus</groupId>
-    <version>4.6.0-SNAPSHOT</version>
+    <version>4.6.1-SNAPSHOT</version>
     <artifactId>parent</artifactId>
   </parent>
+  <properties>  
+    <epics.version>7.0.4</epics.version>
+    <batik.version>1.12</batik.version>
+  </properties>
   <modules>
    <module>nsls2-accl</module>
    <module>nsls2-beamlines</module>
