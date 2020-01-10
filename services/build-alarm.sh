@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # should point to the nsls2-phoebus installation location
-export TOP="$PWD"
+export TOP=/opt/css
 
 # download elastic
 if [ ! -d ${TOP}/lib/elasticsearch-6.3.1 ]; then

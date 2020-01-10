@@ -2,7 +2,7 @@
 
 # Build phoebus and nsls2 product
 
-export TOP="$PWD"
+export TOP=/opt/css
 
 # Download third party tools and services needed for the epics tools and services
 mkdir -p ${TOP}/lib/jvm
@@ -46,5 +46,3 @@ mvn clean install --settings=$TOP/settings.xml -DskipTests=true
 #build nsls2 product
 cd $TOP/products
 mvn clean install --settings=$TOP/settings.xml -DskipTests=true
-
-
