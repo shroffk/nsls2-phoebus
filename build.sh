@@ -46,3 +46,8 @@ mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
 #build nsls2 product
 cd $TOP/nsls2-phoebus/products
 mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
+
+# download nsls2 specific configurations 
+
+cd ${TOP}
+git clone https://gitlab.nsls2.bnl.gov/CS-Studio-NSLS2/preferences.git
