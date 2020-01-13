@@ -23,8 +23,8 @@ Type=simple
 User=root
 Group=root
 #Environment=JAVA_HOME=/home/train/epics-tools/jdk1.8.0_171
-ExecStart=/opt/css/nsls2-phoebus/lib/kafka_2.11-2.1.0/bin/kafka-server-start.sh /opt/css/nsls2-phoebus/lib/kafka_2.11-2.1.0/config/server.properties
-ExecStop=/opt/css/nsls2-phoebus/lib/kafka_2.11-2.1.0/bin/kafka-server-stop.sh
+ExecStart=/opt/css/lib/kafka_2.11-2.1.0/bin/kafka-server-start.sh /opt/css/lib/kafka_2.11-2.1.0/config/server.properties
+ExecStop=/opt/css/lib/kafka_2.11-2.1.0/bin/kafka-server-stop.sh
 
 [Install]
 WantedBy=multi-user.target

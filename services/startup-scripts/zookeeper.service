@@ -23,8 +23,8 @@ Type=simple
 User=root
 Group=root
 
-ExecStart=/opt/css/nsls2-phoebus/lib/kafka_2.11-2.1.0/bin/zookeeper-server-start.sh /opt/css/nsls2-phoebus/lib/kafka_2.11-2.1.0/config/zookeeper.properties
-ExecStop=/opt/css/nsls2-phoebus/lib/kafka_2.11-2.1.0/bin/zookeeper-server-stop.sh
+ExecStart=/opt/css/lib/kafka_2.11-2.1.0/bin/zookeeper-server-start.sh /opt/css/lib/kafka_2.11-2.1.0/config/zookeeper.properties
+ExecStop=/opt/css/lib/kafka_2.11-2.1.0/bin/zookeeper-server-stop.sh
 
 [Install]
 WantedBy=multi-user.target
