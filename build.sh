@@ -51,7 +51,7 @@ mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
 
 if [ ! -d ${TOP}/preferences ]; then
     cd ${TOP}
-    git clone https://github.com/shroffk/phoebus.git
+    git clone https://gitlab.nsls2.bnl.gov/CS-Studio-NSLS2/preferences.git
 fi
 cd ${TOP}/preferences
 git pull
