@@ -23,6 +23,9 @@ Type=simple
 User=root
 Group=root
 
+Environment=JAVA_HOME=/opt/css/lib/jvm/jdk-11.0.2
+Environment=PATH=/opt/css/lib/jvm/jdk-11.0.2/bin:/usr/bin:/usr/local/bin
+
 ExecStart=/opt/css/lib/kafka_2.11-2.1.0/bin/zookeeper-server-start.sh /opt/css/lib/kafka_2.11-2.1.0/config/zookeeper.properties
 ExecStop=/opt/css/lib/kafka_2.11-2.1.0/bin/zookeeper-server-stop.sh
 
