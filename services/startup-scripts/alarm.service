@@ -25,8 +25,8 @@ After=kafka.service
 
 [Service]
 
-Environment=JAVA_HOME=/opt/css/nsls2-phoebus/lib/jvm/jdk-11.0.2
-Environment=PATH=/opt/css/nsls2-phoebus/lib/jvm/jdk-11.0.2/bin:/usr/bin:/usr/local/bin
+Environment=JAVA_HOME=/opt/css/lib/jvm/jdk-11.0.2
+Environment=PATH=/opt/css/lib/jvm/jdk-11.0.2/bin:/usr/bin:/usr/local/bin
 Environment=SERVER=/opt/css/nsls2-phoebus/lib/phoebus/services/alarm-server
 Environment=SETTINGS=/opt/css/nsls2-phoebus/config/accl/settings.ini
 Environment=PORT=4609
