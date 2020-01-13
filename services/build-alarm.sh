@@ -12,19 +12,19 @@ export MVN_HOME=$TOP/lib/apache-maven-3.6.0
 export PATH="$MVN_HOME/bin:$PATH"
 
 # download elastic
-if [ ! -d ${TOP}/lib/elasticsearch-6.3.1 ]; then
-    wget --no-check-certificate https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.3.1.tar.gz -O /tmp/elasticsearch-6.3.1.tar.gz
-    tar xzvf /tmp/elasticsearch-6.3.1.tar.gz --directory ${TOP}/lib
-    rm /tmp/elasticsearch-6.3.1.tar.gz
-fi
+#if [ ! -d ${TOP}/lib/elasticsearch-6.3.1 ]; then
+#    wget --no-check-certificate https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.3.1.tar.gz -O /tmp/elasticsearch-6.3.1.tar.gz
+#    tar xzvf /tmp/elasticsearch-6.3.1.tar.gz --directory ${TOP}/lib
+#    rm /tmp/elasticsearch-6.3.1.tar.gz
+#fi
 
 # download kibana
-if [ ! -d ${TOP}/lib/kibana-6.3.1 ]; then
-    wget --no-check-certificate https://artifacts.elastic.co/downloads/kibana/kibana-6.3.1-linux-x86_64.tar.gz -O /tmp/kibana-6.3.1-linux-x86_64.tar.gz
-    tar xzvf /tmp/kibana-6.3.1-linux-x86_64.tar.gz --directory ${TOP}/lib
-    mv ${TOP}/lib/kibana-6.3.1-linux-x86_64 ${TOP}/lib/kibana-6.3.1
-    rm /tmp/kibana-6.3.1-linux-x86_64.tar.gz
-fi
+#if [ ! -d ${TOP}/lib/kibana-6.3.1 ]; then
+#    wget --no-check-certificate https://artifacts.elastic.co/downloads/kibana/kibana-6.3.1-linux-x86_64.tar.gz -O /tmp/kibana-6.3.1-linux-x86_64.tar.gz
+#    tar xzvf /tmp/kibana-6.3.1-linux-x86_64.tar.gz --directory ${TOP}/lib
+#    mv ${TOP}/lib/kibana-6.3.1-linux-x86_64 ${TOP}/lib/kibana-6.3.1
+#    rm /tmp/kibana-6.3.1-linux-x86_64.tar.gz
+#fi
 
 # download kafka
 if [ ! -d ${TOP}/lib/kafka_2.11-2.1.0 ]; then
