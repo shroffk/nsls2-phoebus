@@ -32,4 +32,4 @@ export JDK_JAVA_OPTIONS
 
 echo $JDK_JAVA_OPTIONS
 
-java -jar $PHOEBUS_JAR -settings $PHOEBUS_CONFIG -logging $TOP/config/logging.properties $OPT "$@" &
+java -jar $PHOEBUS_JAR -settings $PHOEBUS_CONFIG -logging $TOP/nsls2-phoebus/config/logging.properties $OPT "$@" &
