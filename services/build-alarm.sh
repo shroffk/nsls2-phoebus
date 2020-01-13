@@ -3,6 +3,14 @@
 # should point to the nsls2-phoebus installation location
 export TOP=/opt/css
 
+# set the java and maven env variables
+
+export JAVA_HOME=$TOP/lib/jvm/jdk-11.0.2
+export PATH="$JAVA_HOME/bin:$PATH"
+
+export MVN_HOME=$TOP/lib/apache-maven-3.6.0
+export PATH="$MVN_HOME/bin:$PATH"
+
 # download elastic
 if [ ! -d ${TOP}/lib/elasticsearch-6.3.1 ]; then
     wget --no-check-certificate https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.3.1.tar.gz -O /tmp/elasticsearch-6.3.1.tar.gz
@@ -25,3 +33,5 @@ if [ ! -d ${TOP}/lib/kafka_2.11-2.1.0 ]; then
     rm /tmp/kafka_2.11-2.1.0.tgz
 fi
 
+cd ${TOP}/lib/phoebus/services
+mvn install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
