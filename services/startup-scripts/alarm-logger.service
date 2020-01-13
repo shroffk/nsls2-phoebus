@@ -27,7 +27,7 @@ After=kafka.service
 
 Environment=JAVA_HOME=/opt/css/lib/jvm/jdk-11.0.2
 Environment=PATH=/opt/css/lib/jvm/jdk-11.0.2/bin:/usr/bin:/usr/local/bin
-Environment=SERVER=/opt/css/nsls2-phoebus/lib/phoebus/services/alarm-logger
+Environment=SERVER=/opt/css/lib/phoebus/services/alarm-logger
 Environment=PORT=4610
 Environment=CONFIG=NSLS2_OPR
 
