@@ -29,6 +29,7 @@ Environment=JAVA_HOME=/opt/css/lib/jvm/jdk-11.0.2
 Environment=PATH=/opt/css/lib/jvm/jdk-11.0.2/bin:/usr/bin:/usr/local/bin
 Environment=SERVER=/opt/css/lib/phoebus/services/alarm-logger
 Environment=PORT=4610
+# The configuration for the alarm server topic
 Environment=CONFIG=NSLS2_OPR
 
 User=root
