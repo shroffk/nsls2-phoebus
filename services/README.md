@@ -1,5 +1,6 @@
 All 3 alarm services are part of the phoebus/services. 
-They can all be built using the build-alarm.sh script. The script downloads and install java, elastic search, and kafka.
+
+They can all be built using the `build-alarm.sh` script. The script downloads and install java, elastic search, and kafka.
 
 ### Installing the alarm server  
 
