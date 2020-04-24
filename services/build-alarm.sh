@@ -63,4 +63,6 @@ if [ ! -d ${TOP}/lib/kafka_2.11-2.1.0 ]; then
     rm /tmp/kafka_2.11-2.1.0.tgz
 fi
 
+# fix the data location for the kafka server
+sed -i 's/\/tmp\/kafka-logs/\/opt\/css\/data\/kafka-logs/' ${TOP}/lib/kafka_2.11-2.1.0/config/server.properties
 
