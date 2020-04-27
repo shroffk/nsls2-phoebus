@@ -39,7 +39,7 @@ export PATH="$MVN_HOME/bin:$PATH"
 
 #build phoebus
 cd $TOP/lib/phoebus
-mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
+mvn clean install --settings=$TOP/config/settings.xml -DskipTests=true
 
 # download elastic
 if [ ! -d ${TOP}/lib/elasticsearch-6.3.1 ]; then
