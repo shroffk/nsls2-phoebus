@@ -67,6 +67,6 @@ if [ ! -d ${TOP}/lib/kafka_2.11-2.1.0 ]; then
 fi
 
 # fix the data location for the kafka server
-sed -i 's/\/tmp\/zookeeper/\/opt\/css\/data\/zookeeper/' ${TOP}/lib/kafka_2.11-2.1.0/config/server.properties
+sed -i 's/\/tmp\/zookeeper/\/opt\/css\/data\/zookeeper/' ${TOP}/lib/kafka_2.11-2.1.0/config/zookeeper.properties
 sed -i 's/\/tmp\/kafka-logs/\/opt\/css\/data\/kafka-logs/' ${TOP}/lib/kafka_2.11-2.1.0/config/server.properties
 
