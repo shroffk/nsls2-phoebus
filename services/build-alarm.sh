@@ -5,6 +5,9 @@ export TOP=/opt/css
 
 # Download third party tools and services needed for the epics tools and services
 mkdir -p ${TOP}/lib/jvm
+mkdir -p $TOP/lib/build-config
+
+cp -rf ../settings.xml $TOP/lib/build-config
 
 # download jdk 11
 if [ ! -d ${TOP}/lib/jvm/jdk-11.0.2 ]; then
@@ -39,7 +42,7 @@ export PATH="$MVN_HOME/bin:$PATH"
 
 #build phoebus
 cd $TOP/lib/phoebus
-mvn clean install --settings=$TOP/config/settings.xml -DskipTests=true
+mvn clean install --settings=$TOP/lib/build-config/settings.xml -DskipTests=true
 
 # download elastic
 if [ ! -d ${TOP}/lib/elasticsearch-6.3.1 ]; then
