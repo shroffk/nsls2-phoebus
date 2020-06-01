@@ -28,7 +28,11 @@ if [ ! -d ${TOP}/lib/phoebus ]; then
     cd ${TOP}/lib
     git clone https://github.com/shroffk/phoebus.git
 fi
+
+# Update the git repos
 cd ${TOP}/lib/phoebus
+git pull
+cd ${TOP}/lib/nsls2-phoebus
 git pull
 
 # set the java and maven env variables
