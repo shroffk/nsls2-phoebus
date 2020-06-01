@@ -49,7 +49,7 @@ mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
 
 # Build nsls2 product products
 cd $TOP/nsls2-phoebus/products
-mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
+mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true -Ddocs=$TOP/lib/phoebus/docs
 
 # download nsls2 specific configurations 
 
