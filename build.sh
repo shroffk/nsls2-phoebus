@@ -45,7 +45,7 @@ export PATH="$MVN_HOME/bin:$PATH"
 cd $TOP/lib/phoebus
 
 # Build the documentation and help
-mvn verify -P sphinx -N
+mvn verify --settings=$TOP/nsls2-phoebus/settings.xml -P sphinx -N
 # Build the common phoebus binaries
 mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
 
