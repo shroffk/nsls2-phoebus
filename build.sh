@@ -32,8 +32,6 @@ fi
 # Update the git repos
 cd ${TOP}/lib/phoebus
 git pull
-cd ${TOP}/lib/nsls2-phoebus
-git pull
 
 # set the java and maven env variables
 
