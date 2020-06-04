@@ -14,6 +14,11 @@
       <artifactId>app-logbook-olog-es</artifactId>
       <version>4.6.4-SNAPSHOT</version>
     </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-trends-rich-context-menu</artifactId>
+      <version>4.6.4-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   <parent>
     <groupId>org.phoebus</groupId>
