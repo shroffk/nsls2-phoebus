@@ -31,5 +31,9 @@
         <include>*.jar</include>
       </includes>
     </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}/doc</directory>
+      <outputDirectory>/doc</outputDirectory>
+    </fileSet>
   </fileSets>
 </assembly>
