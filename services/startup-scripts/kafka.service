@@ -1,0 +1,33 @@
+# File /etc/systemd/system/kafka.service
+#
+# Start/status/stop
+#   sudo systemctl start kafka.service
+#   sudo systemctl status kafka.service
+#   sudo systemctl stop kafka.service
+#
+# Start when computer boots:
+#   sudo systemctl enable kafka.service
+#
+# When running, it should listen on localhost:9092
+#   netstat -an | fgrep 9092
+
+
+[Unit]
+Description=Apache Kafka server (broker)
+Documentation=http://kafka.apache.org/documentation.html
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target zookeeper.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+
+Environment=JAVA_HOME=/opt/css/lib/jvm/jdk-11.0.2
+Environment=PATH=/opt/css/lib/jvm/jdk-11.0.2/bin:/usr/bin:/usr/local/bin
+
+ExecStart=/opt/css/lib/kafka_2.11-2.1.0/bin/kafka-server-start.sh /opt/css/lib/kafka_2.11-2.1.0/config/server.properties
+ExecStop=/opt/css/lib/kafka_2.11-2.1.0/bin/kafka-server-stop.sh
+
+[Install]
+WantedBy=multi-user.target

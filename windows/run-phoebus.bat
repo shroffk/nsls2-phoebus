@@ -8,7 +8,7 @@ SET JAVA_HOME=%TOP%\lib\jvm\jdk-11.0.2
 SET PATH=%JAVA_HOME%\bin;%PATH%
 
 echo %TOP%
-SET PHOEBUS_VERSION="4.6.2-SNAPSHOT"
+SET PHOEBUS_VERSION="4.6.4-SNAPSHOT"
 
 REM figure out the path to the product jar
 PHOEBUS_JAR=%TOP%\products\nsls2-accl\target\nsls2-accl-product-%PHOEBUS_VERSION%.jar

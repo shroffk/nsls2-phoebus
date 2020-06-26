@@ -1,22 +1,22 @@
 #!/bin/bash
 
 # Phoebus launcher for Linux or Mac OS X
-TOP="$PWD"
+TOP=/opt/css
 
 export JAVA_HOME=$TOP/lib/jvm/jdk-11.0.2
 export PATH="$JAVA_HOME/bin:$PATH"
 
 echo $TOP
-V="4.6.2-SNAPSHOT"
+V="4.6.4-SNAPSHOT"
 
 # figure out the path to the product jar
 if [[ -z "${PHOEBUS_JAR}" ]]; then
-  PHOEBUS_JAR=${TOP}/products/nsls2-accl/target/nsls2-accl-product-${V}.jar
+  PHOEBUS_JAR=${TOP}/nsls2-phoebus/products/nsls2-accl/target/nsls2-accl-product-${V}.jar
 fi
 
 # figure out the path to the configuration settings
 if [[ -z "${PHOEBUS_CONFIG}" ]]; then
-  PHOEBUS_CONFIG=${TOP}/config/settings.ini
+  PHOEBUS_CONFIG=${TOP}/nsls2-phoebus/config/settings.ini
 fi
 
 # To get one instance, use server mode
@@ -32,4 +32,4 @@ export JDK_JAVA_OPTIONS
 
 echo $JDK_JAVA_OPTIONS
 
-java -jar $PHOEBUS_JAR -settings $PHOEBUS_CONFIG -logging $TOP/config/logging.properties $OPT "$@" &
+java -jar $PHOEBUS_JAR -settings $PHOEBUS_CONFIG -logging $TOP/nsls2-phoebus/config/logging.properties $OPT "$@" &
