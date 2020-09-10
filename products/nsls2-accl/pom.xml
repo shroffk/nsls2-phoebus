@@ -80,6 +80,11 @@
                   <directory>${docs}/build/html</directory>
                   <filtering>true</filtering>
                 </resource>
+                <!-- copy the welcome html screens -->
+                <resource>
+                  <directory>${project.basedir}/resources</directory>
+                  <filtering>true</filtering>
+                </resource>
               </resources>
             </configuration>
           </execution>

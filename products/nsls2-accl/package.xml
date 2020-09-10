@@ -25,6 +25,10 @@
       </includes>
     </fileSet>
     <fileSet>
+      <directory>${project.build.directory}/welcome</directory>
+      <outputDirectory>./welcome</outputDirectory>
+    </fileSet>
+    <fileSet>
       <directory>${project.build.directory}/lib</directory>
       <outputDirectory>./lib</outputDirectory>
       <includes>
