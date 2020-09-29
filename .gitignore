@@ -32,3 +32,8 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+
+### intellij ###
+
+*/.idea/*
+*.iml
