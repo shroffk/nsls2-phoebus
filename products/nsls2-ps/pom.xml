@@ -23,12 +23,14 @@
     <dependency>
       <groupId>org.epics</groupId>
       <artifactId>app-waveform-viewer</artifactId>
-      <version>4.6.4</version>
+      <version>4.6.5</version>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>org.epics</groupId>
       <artifactId>app-waveform-index-viewer</artifactId>
-      <version>4.6.4</version>
+      <version>4.6.5</version>
+      <optional>true</optional>
     </dependency>
   </dependencies>
   <parent>
