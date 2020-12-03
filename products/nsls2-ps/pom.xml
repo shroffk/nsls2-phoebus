@@ -11,7 +11,7 @@
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
-      <artifactId>app-logbook-olog-es</artifactId>
+      <artifactId>app-logbook-olog-client-es</artifactId>
       <version>4.6.5-SNAPSHOT</version>
     </dependency>
     <dependency>
