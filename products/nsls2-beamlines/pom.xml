@@ -11,6 +11,16 @@
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
+      <artifactId>app-logbook-olog-client</artifactId>
+      <version>4.6.6-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-logbook-ui</artifactId>
+      <version>4.6.6-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
       <artifactId>app-logbook-olog-client-es</artifactId>
       <version>4.6.6-SNAPSHOT</version>
     </dependency>
@@ -22,6 +32,11 @@
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-trends-rich-adapters</artifactId>
+      <version>4.6.6-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-utility-preference-manager</artifactId>
       <version>4.6.6-SNAPSHOT</version>
     </dependency>
   </dependencies>
