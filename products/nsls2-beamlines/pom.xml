@@ -7,17 +7,17 @@
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>product</artifactId>
-      <version>4.6.2-SNAPSHOT</version>
+      <version>4.6.6-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-logbook-olog-es</artifactId>
-      <version>4.6.2-SNAPSHOT</version>
+      <version>4.6.6-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <parent>
     <groupId>org.phoebus</groupId>
-    <version>4.6.2-SNAPSHOT</version>
+    <version>4.6.6-SNAPSHOT</version>
     <artifactId>nsls2-products</artifactId>
   </parent>
 
