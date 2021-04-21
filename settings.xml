@@ -58,6 +58,7 @@ under the License.
             <username>proxyuser</username> <password>proxypass</password> <host>proxy.host.net</host>
             <port>80</port> <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
    </proxy> -->
+   <!--
    <proxy>
       <id>myproxyhttp</id>
       <active>true</active>
@@ -74,5 +75,6 @@ under the License.
       <port>8888</port>
       <nonProxyHosts></nonProxyHosts>
    </proxy>
+   -->
  </proxies>
 </settings>
