@@ -31,6 +31,7 @@ fi
 
 # Update the git repos
 cd ${TOP}/lib/phoebus
+git reset --hard
 git pull
 
 # set the java and maven env variables
