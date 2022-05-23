@@ -31,6 +31,7 @@ fi
 
 # Update the git repos
 cd ${TOP}/lib/phoebus
+git reset --hard
 git pull
 
 # set the java and maven env variables
@@ -45,19 +46,10 @@ export PATH="$MVN_HOME/bin:$PATH"
 cd $TOP/lib/phoebus
 
 # Build the documentation and help
-mvn verify --settings=$TOP/nsls2-phoebus/settings.xml -P sphinx -N
+mvn clean verify --settings=$TOP/nsls2-phoebus/settings.xml -P sphinx -N
 # Build the common phoebus binaries
-mvn install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
+mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true
 
 # Build nsls2 product products
 cd $TOP/nsls2-phoebus/products
 mvn clean install --settings=$TOP/nsls2-phoebus/settings.xml -DskipTests=true -Ddocs=$TOP/lib/phoebus/docs
-
-# download nsls2 specific configurations 
-
-#if [ ! -d ${TOP}/preferences ]; then
-#    cd ${TOP}
-#    git clone https://gitlab.nsls2.bnl.gov/CS-Studio-NSLS2/preferences.git
-#fi
-#cd ${TOP}/preferences
-#git pull
