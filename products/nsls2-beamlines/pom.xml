@@ -34,11 +34,13 @@
       <artifactId>app-utility-preference-manager</artifactId>
       <version>4.6.10-SNAPSHOT</version>
     </dependency>
+    <!--
     <dependency>
       <groupId>org.phoebus</groupId>
       <artifactId>app-display-extra-widgets</artifactId>
       <version>4.6.10-SNAPSHOT</version>
     </dependency>
+     -->
   </dependencies>
   <parent>
     <groupId>org.phoebus</groupId>
