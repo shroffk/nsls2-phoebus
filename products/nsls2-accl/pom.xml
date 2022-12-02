@@ -9,6 +9,33 @@
       <artifactId>product</artifactId>
       <version>4.7.2-SNAPSHOT</version>
     </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-trends-rich-adapters</artifactId>
+      <version>4.7.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-utility-preference-manager</artifactId>
+      <version>4.7.2-SNAPSHOT</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-logbook-olog-client-es</artifactId>
+      <version>4.7.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-logbook-olog-client</artifactId>
+      <version>4.7.2-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.phoebus</groupId>
+      <artifactId>app-logbook-olog-ui</artifactId>
+      <version>4.7.2-SNAPSHOT</version>
+    </dependency>
+
   </dependencies>
   <parent>
     <groupId>org.phoebus</groupId>
