@@ -6,7 +6,11 @@
   <name>NSLS2 phoebus products</name>
   <parent>
     <groupId>org.phoebus</groupId>
+<<<<<<< HEAD
     <version>4.7.4-SNAPSHOT</version>
+=======
+    <version>4.6.6-SNAPSHOT</version>
+>>>>>>> refs/heads/master
     <artifactId>parent</artifactId>
   </parent>
   <properties>  
