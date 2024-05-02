@@ -8,7 +8,7 @@ export TOP="$PWD"
 mkdir -p ${TOP}/lib/jvm
 
 # download jdk 11
-if [ ! -d ${TOP}/lib/jvm/jdk-11.0.2 ]; then
+if [ ! -d ${TOP}/lib/jvm/jdk-17 ]; then
     wget --no-verbose https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz -O /tmp/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz
     tar xfvz /tmp/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz --directory ${TOP}/lib/jvm && mv ${TOP}/lib/jvm/jdk-17.0.10+7 ${TOP}/lib/jvm/jdk-17
     rm /tmp/openjdk-11+28_linux-x64_bin.tar.gz
