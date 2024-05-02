@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Build phoebus and nsls2 product
+# Build Phoebus and nsls2 product
 
 export TOP="$PWD"
 
@@ -11,7 +11,7 @@ mkdir -p ${TOP}/lib/jvm
 if [ ! -d ${TOP}/lib/jvm/jdk-17 ]; then
     wget --no-verbose https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz -O /tmp/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz
     tar xfvz /tmp/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz --directory ${TOP}/lib/jvm && mv ${TOP}/lib/jvm/jdk-17.0.10+7 ${TOP}/lib/jvm/jdk-17
-    rm /tmp/openjdk-11+28_linux-x64_bin.tar.gz
+    rm /tmp/OpenJDK17U-jdk_x64_linux_hotspot_17.0.10_7.tar.gz
 fi
 
 
@@ -51,5 +51,5 @@ mvn clean verify -P sphinx -N
 mvn clean install -DskipTests=true
 
 # Build nsls2 product products
-cd $TOP/nsls2-phoebus/products
+cd $TOP/products
 mvn clean install -DskipTests=true -Ddocs=$TOP/lib/phoebus/docs
