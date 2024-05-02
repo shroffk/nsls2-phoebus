@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Phoebus launcher for Linux or Mac OS X
-TOP=/opt/css
+TOP=/opt/epics-tools
 
 export JAVA_HOME=$TOP/lib/jvm/jdk-11.0.2
 export PATH="$JAVA_HOME/bin:$PATH"
