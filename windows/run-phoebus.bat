@@ -4,7 +4,7 @@ cd ..
 
 SET TOP=%cd%
 
-SET JAVA_HOME=%TOP%\lib\jvm\jdk-11.0.2
+SET JAVA_HOME=%TOP%\lib\jvm\jdk-17
 SET PATH=%JAVA_HOME%\bin;%PATH%
 
 echo %TOP%
