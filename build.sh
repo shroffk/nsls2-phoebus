@@ -2,7 +2,7 @@
 
 # Build phoebus and nsls2 product
 
-export TOP=/opt/css
+export TOP=/opt/epics-tools
 
 # Download third party tools and services needed for the epics tools and services
 mkdir -p ${TOP}/lib/jvm
