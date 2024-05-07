@@ -14,8 +14,15 @@
         <include>README*</include>
         <include>LICENSE*</include>
         <include>NOTICE*</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>${project.basedir}</directory>
+      <outputDirectory>./</outputDirectory>
+      <includes>
         <include>*.sh</include>
       </includes>
+      <fileMode>0755</fileMode>
     </fileSet>
     <fileSet>
       <directory>${project.build.directory}</directory>
