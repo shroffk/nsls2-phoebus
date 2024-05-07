@@ -14,7 +14,7 @@ V="4.7.4-SNAPSHOT"
 
 # figure out the path to the product jar
 if [[ -z "${PHOEBUS_JAR}" ]]; then
-  PHOEBUS_JAR=${TOP}/products/nsls2-accl/target/nsls2-accl-product-${V}.jar
+  PHOEBUS_JAR=${TOP}/nsls2-accl-product-${V}.jar
 fi
 
 # figure out the path to the configuration settings

@@ -39,5 +39,9 @@
       <directory>${project.build.directory}/doc</directory>
       <outputDirectory>./doc</outputDirectory>
     </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}/doc</directory>
+      <outputDirectory>./config</outputDirectory>
+    </fileSet>
   </fileSets>
 </assembly>
