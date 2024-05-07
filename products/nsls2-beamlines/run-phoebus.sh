@@ -6,8 +6,8 @@
 # TOP="."
 TOP="$( cd "$(dirname "$0")" ; pwd -P )"
 
-export JAVA_HOME=${TOP}/lib/jvm/jdk-17
-export PATH="$JAVA_HOME/bin:$PATH"
+#export JAVA_HOME=${TOP}/lib/jvm/jdk-17
+#export PATH="$JAVA_HOME/bin:$PATH"
 
 echo $TOP
 V="4.7.4-SNAPSHOT"
