@@ -40,7 +40,7 @@
       <outputDirectory>./doc</outputDirectory>
     </fileSet>
     <fileSet>
-      <directory>${project.build.directory}/doc</directory>
+      <directory>${project.build.directory}/config</directory>
       <outputDirectory>./config</outputDirectory>
     </fileSet>
   </fileSets>
