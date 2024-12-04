@@ -16,10 +16,10 @@ fi
 
 
 # download maven
-if [ ! -d ${TOP}/lib/apache-maven-3.6.0 ]; then
-    wget --no-verbose https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz -O /tmp/apache-maven-3.6.0-bin.tar.gz
-    tar xzvf /tmp/apache-maven-3.6.0-bin.tar.gz --directory ${TOP}/lib
-    rm /tmp/apache-maven-3.6.0-bin.tar.gz
+if [ ! -d ${TOP}/lib/apache-maven-3.9.9 ]; then
+    wget --no-verbose https://archive.apache.org/dist/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz -O /tmp/apache-maven-3.9.9-bin.tar.gz
+    tar xzvf /tmp/apache-maven-3.9.9-bin.tar.gz --directory ${TOP}/lib
+    rm /tmp/apache-maven-3.9.9-bin.tar.gz
 fi
 
 
@@ -39,7 +39,7 @@ git pull
 export JAVA_HOME=${TOP}/lib/jvm/jdk-17
 export PATH="$JAVA_HOME/bin:$PATH"
 
-export MVN_HOME=$TOP/lib/apache-maven-3.6.0
+export MVN_HOME=$TOP/lib/apache-maven-3.9.9
 export PATH="$MVN_HOME/bin:$PATH"
 
 # Build phoebus
