@@ -26,7 +26,7 @@ fi
 # install phoebus
 if [ ! -d ${TOP}/lib/phoebus ]; then
     cd ${TOP}/lib
-    git clone https://github.com/ControlSystemStudio/phoebus
+    git clone https://github.com/ControlSystemStudio/phoebus --branch 85ca195 --single-branch
 fi
 
 # Update the git repos
