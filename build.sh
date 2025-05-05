@@ -2,7 +2,7 @@
 
 # Build Phoebus and nsls2 product
 
-export TOP="$PWD"
+TOP="$( cd "$(dirname "$0")" ; pwd -P )"
 
 # Download third party tools and services needed for the epics tools and services
 mkdir -p ${TOP}/lib/jvm
@@ -26,7 +26,7 @@ fi
 # install phoebus
 if [ ! -d ${TOP}/lib/phoebus ]; then
     cd ${TOP}/lib
-    git clone https://github.com/ControlSystemStudio/phoebus --branch 85ca195 --single-branch
+    git clone https://github.com/ControlSystemStudio/phoebus --branch v5.0.0 --single-branch
 fi
 
 # Update the git repos
@@ -37,13 +37,13 @@ git pull
 # set the java and maven env variables
 
 export JAVA_HOME=${TOP}/lib/jvm/jdk-17
-export PATH="$JAVA_HOME/bin:$PATH"
+export PATH="${JAVA_HOME}/bin:$PATH"
 
-export MVN_HOME=$TOP/lib/apache-maven-3.9.9
-export PATH="$MVN_HOME/bin:$PATH"
+export MVN_HOME=${TOP}/lib/apache-maven-3.9.9
+export PATH="${MVN_HOME}/bin:$PATH"
 
 # Build phoebus
-cd $TOP/lib/phoebus
+cd ${TOP}/lib/phoebus
 
 # Build the documentation and help
 mvn clean verify -P sphinx -N
@@ -52,4 +52,5 @@ mvn clean install -DskipTests=true
 
 # Build nsls2 product products
 cd $TOP/products
-mvn clean install -DskipTests=true -Ddocs=$TOP/lib/phoebus/docs
+mvn clean install -DskipTests=true -Ddocs=${TOP}/lib/phoebus/docs
+
