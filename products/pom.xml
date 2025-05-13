@@ -18,6 +18,9 @@
   </modules>
 
   <scm>
+    <connection>scm:git:git://github.com/shroffk/nsls2-phoebus.git</connection>
+    <developerConnection>scm:git:https://github.com/shroffk/nsls2-phoebus</developerConnection>
+    <url>https://github.com/shroffk/phoebus/tree/master</url>
     <tag>v5.0.0</tag>
   </scm>
 </project>
