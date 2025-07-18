@@ -1,14 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>nsls2-products</artifactId>
   <packaging>pom</packaging>
   <name>NSLS2 phoebus products</name>
   <parent>
     <groupId>org.phoebus</groupId>
-    <version>5.0.0</version>
+    <version>5.0.2</version>
     <artifactId>parent</artifactId>
   </parent>
-  <properties>  
+  <properties>
     <epics.version>7.0.4</epics.version>
     <batik.version>1.12</batik.version>
   </properties>
@@ -16,11 +17,4 @@
    <module>nsls2-accl</module>
    <module>nsls2-beamlines</module>
   </modules>
-
-  <scm>
-    <connection>scm:git:git://github.com/shroffk/nsls2-phoebus.git</connection>
-    <developerConnection>scm:git:https://github.com/shroffk/nsls2-phoebus</developerConnection>
-    <url>https://github.com/shroffk/phoebus/tree/master</url>
-    <tag>v5.0.0</tag>
-  </scm>
 </project>
