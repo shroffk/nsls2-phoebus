@@ -26,13 +26,14 @@ fi
 # install phoebus
 if [ ! -d ${TOP}/lib/phoebus ]; then
     cd ${TOP}/lib
-    git clone https://github.com/ControlSystemStudio/phoebus --branch v5.0.2 --single-branch
+    git clone https://github.com/ControlSystemStudio/phoebus
 fi
 
 # Update the git repos
 cd ${TOP}/lib/phoebus
-git reset --hard
-git pull
+git fetch --all --tags
+git checkout v5.0.2
+git clean -fdx
 
 # set the java and maven env variables
 
