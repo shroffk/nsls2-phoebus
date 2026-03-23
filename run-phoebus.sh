@@ -7,11 +7,14 @@ export JAVA_HOME=${TOP}/lib/jvm/jdk-17
 export PATH="$JAVA_HOME/bin:$PATH"
 
 echo $TOP
-V="4.7.4-SNAPSHOT"
+# figure out the path to the product jar
+if [[ -z "${PHOEBUS_VERSION}" ]]; then
+  PHOEBUS_VERSION=4.7.4-SNAPSHOT
+fi
 
 # figure out the path to the product jar
 if [[ -z "${PHOEBUS_JAR}" ]]; then
-  PHOEBUS_JAR=${TOP}/products/nsls2-accl/target/nsls2-accl-product-${V}.jar
+  PHOEBUS_JAR=${TOP}/products/nsls2-accl/target/nsls2-accl-product-${PHOEBUS_VERSION}.jar
 fi
 
 # figure out the path to the configuration settings
